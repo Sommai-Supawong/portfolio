@@ -85,12 +85,21 @@ h2 {
   flex-wrap: wrap;
 }
 
+/* Animation for project boxes */
 .project {
   background: hsl(0, 0%, 85%);
   padding: 20px;
   border-radius: 8px;
   width: 300px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0; /* ซ่อนกล่องก่อน */
+  transform: translateY(50px); /* ขยับลงก่อน */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* เพิ่ม transition */
+}
+
+.project.visible {
+  opacity: 1; /* แสดงกล่อง */
+  transform: translateY(0); /* ขยับกลับตำแหน่งเดิม */
 }
 
 /* Contact Section */

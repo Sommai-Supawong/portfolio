@@ -59,5 +59,21 @@
             <p>&copy; 2025 Sommai Supawong. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const projects = document.querySelectorAll(".project");
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+            }
+          });
+        });
+
+        projects.forEach((project) => observer.observe(project));
+      });
+    </script>
 </body>
 </html>
