@@ -51,6 +51,14 @@ nav ul li {
 nav ul li a {
   color: #fff;
   font-weight: bold;
+  transition: color 0.3s ease, background-color 0.3s ease; /* เพิ่ม transition เพื่อให้การเปลี่ยนแปลงดูนุ่มนวล */
+}
+
+nav ul li a:hover {
+  color: #007bff; /* เปลี่ยนสีข้อความเมื่อ hover */
+  background-color: rgba(255, 255, 255, 0.1); /* เพิ่มพื้นหลังเมื่อ hover */
+  padding: 5px 10px; /* เพิ่ม padding เพื่อให้ดูเหมือนปุ่ม */
+  border-radius: 5px; /* เพิ่มมุมโค้ง */
 }
 
 /* Sections */
