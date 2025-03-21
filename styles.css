@@ -33,6 +33,9 @@ header {
   background: #222;
   color: #fff;
   padding: 20px 0;
+  position: sticky; /* ทำให้ header ติดอยู่ด้านบน */
+  top: 0; /* ระยะห่างจากด้านบน */
+  z-index: 1000; /* เพื่อให้ header อยู่เหนือเนื้อหาอื่น */
 }
 
 header h1 {
